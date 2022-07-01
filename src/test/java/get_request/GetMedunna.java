@@ -66,6 +66,8 @@ Given
                     "2021-12-21T22:14:42.623577Z", 3352, "burhanoArron", "RueckerMcKenzie", "1999-12-31T22:12:00Z", "1111111111", "MALE", "Anegative",
                     "Suite 142 440 Hills Squares, Langoshport, ID 730329601 Wade Shore, Andersontown, KS 45640", "filomena.corwin@yahoo.com", "Sick", medunnaUserInfo,
                     "null", "null", medunnaUserCountryInfo, "null");
+
+        String data = "";
         Response actualData = given().spec(spec)
                 .header("Authorization","Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2dXNhbGdhc2ltb3YiLCJhdXRoIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY1NjUyNDA1M30.VLvRIgejqGm_460n_EqBkTYbV4wBEjwZc9gV74T7wAR2o9nSzKtsmRNw-aJScB5cG6B7_ZJpwcaaYZvDlBcKMA")
                 .when().get("/{first}/{second}");
